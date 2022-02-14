@@ -1,0 +1,127 @@
+
+body{
+    background-image: url("./images/photo-1541140134513-85a161dc4a00.jpg");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header{
+    color: white;
+    background-color: rgb(46, 107, 74);
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: ;
+}
+
+h2{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
+.input__container{
+    margin: auto;
+    padding-bottom: 2rem;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#toDo{
+    flex: 4;
+    /* width:75% ; */
+    height: 2rem;
+}
+
+#add{
+    flex: 1;
+}
+#add:hover{
+    border: none;
+    border-radius: 2rem;
+    background-color: red;
+    color: white;
+    font-style: oblique;
+}
+
+
+
+.container-list{
+    background-image: url("./images/1.jpg");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    width: 70%;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+ul{
+    /* padding-top: 2rem; */
+    position: relative;
+    left: -1rem;
+    margin: auto;
+    width: 50%;
+    /* margin-left: 0px; */
+    
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 16px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd) {
+    background: rgb(37, 36, 36);
+    color: white;
+  }
+
+ul li:hover {
+    background: #ddd;
+  }
+
+ul li.checked {
+    background: #888;
+    color: greenyellow;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '\2713';
+    position: absolute;
+    left: 16px;
+    
+}
+
+.close{
+    color: rgb(129, 213, 224);
+    padding: 16px 8px 11px 8px ;
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+    text-decoration:none;
+    justify-content: right;
+    height: inherit
+}
+
+.close:hover{
+    background-color: red;
+    color: white;
+}
